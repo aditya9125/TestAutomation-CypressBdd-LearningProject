@@ -1,10 +1,12 @@
+const { default: HomePage } = require("./PageObjects/homePage")
+
 describe('Home page', function(){
 
-    it.skip('My first test case', function(){
+    it('My first test case', function(){
+        
+        const homePage = new HomePage()
         cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/")
-        .then(()=> {
-            return cy.get('.awesome-selector')
-        })
+        homePage.getNameBox().type('Aditya')        
     })
 
     it.skip('My second test case', function(){
@@ -21,11 +23,10 @@ describe('Home page', function(){
         })
     })
 
-    it('Check wheter the title displayed is correct or not', function(){
+    it.skip('Check wheter the title displayed is correct or not', function(){
 
         cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
         cy.get('.brand').should('have.text','GREENKART')
     })
-
 
 })

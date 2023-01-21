@@ -7,6 +7,7 @@ module.exports = defineConfig({
       // implement node event listeners here
       on('file:preprocessor', cucumber())
     },
-    specPattern: 'cypress/integration/examples/BDD/Features/GIO/Gio_ContactUs.feature'
+    //specPattern: 'cypress/integration/examples/BDD/Features/GIO/Gio_ContactUs.feature'
+    specPattern: 'cypress/integration/examples/test1.js'
   },
 });
