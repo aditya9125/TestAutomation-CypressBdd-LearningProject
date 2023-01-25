@@ -9,8 +9,11 @@
   "author": "Aditya Pratap Singh",
   "license": "ISC",
   "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
     "cypress": "^10.8.0",
     "cypress-cucumber-preprocessor": "^4.3.1"
   },
-  "cypress-cucumber-preprocessor": { "nonGlobalStepDefinitions": true}
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
 }
